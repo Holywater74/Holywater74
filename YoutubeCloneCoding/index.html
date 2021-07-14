@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">  
+    <title>HWTUBE</title>
+
+    <script
+        src="https://kit.fontawesome.com/2d323a629b.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">HWTUBE</span>
+        </div>
+        <div class="icon">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <section class="player">
+        <video controls src="video/videoplayback.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#OliviaRodrigo</li>
+                    <li>#good4u</li>
+                    <li>#Holywater</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        Olivia Rodrigo - good 4 u (Lyrics)
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">22.3M views 2 month ago</span>
+                </div>
+            </div>
+            <div>
+                <ul class="actions">
+                    <li><button><i class="active fas fa-thumbs-up"></i><span>250K</span></button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i><span>6.6K</span></button></li>
+                    <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                    <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                    <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+                </ul>
+            </div>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="icon/people.png" alt=""/>
+                    <div class="info">
+                        <span class="name">Holywater</span>
+                        <span class="subscribers">3M subscrivers</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+    
+        <section class="UpNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="icon/pitr.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Lauv - Paris in the Rain [Official Video]
+                        </span>
+                        <span class="name">Lauv</span>
+                        <span class="views">130M</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="icon/c.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Jeremy Zucker - comethru (Official Video)
+                        </span>
+                        <span class="name">Jeremy Zucker</span>
+                        <span class="views">370M</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button></li>
+                <li class="item">
+                    <div class="img"><img src="icon/e.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Kiana Ledé - EX (Audio)
+                        </span>
+                        <span class="name">Kiana Ledé                    </span>
+                        <span class="views">1.2M</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button></li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
