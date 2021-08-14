@@ -25,3 +25,8 @@ video {
     padding-top: 30px;
     padding-right: 10px;
 }
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
