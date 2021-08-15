@@ -14,34 +14,45 @@
   </div>
   <h1 :style="green">부동산</h1>
   <div>
-    <img src="./assets/room0.jpg" class="room-img">
-    <h4 @click="모달오픈 = true">{{ products[0] }} 원룸</h4>
-    <p>{{price[0]}}만원</p>
-    <button @click="increase0">허위매물 신고</button> 
-    <sapn> 신고 수 : {{ 신고수[0] }}</sapn>
+    <img :src="원룸[0].image" class="room-img">
+    <h4 @click="모달오픈 = true">{{ 원룸[0].title }} 원룸</h4>
+    <p>{{원룸[0].price}}원</p>
   </div>
   <div>
-    <img src="./assets/room1.jpg" class="room-img">
-    <h4>{{ products[1] }} 원룸</h4>
-    <p>{{price[1]}}만원</p>
-    <button @click="increase1">허위매물 신고</button> 
-    <sapn> 신고 수 : {{ 신고수[1] }}</sapn>
+    <img :src="원룸[1].image" class="room-img">
+    <h4>{{ 원룸[1].title }} 원룸</h4>
+    <p>{{원룸[1].price}}원</p>
   </div>
   <div>
-    <img src="./assets/room2.jpg" class="room-img">
-    <h4>{{ products[2] }} 원룸</h4>
-    <p>{{price[2]}}만원</p>
-    <button @click="increase2">허위매물 신고</button> 
-    <sapn> 신고 수 : {{ 신고수[2] }}</sapn>
+    <img :src="원룸[2].image" class="room-img">
+    <h4>{{ 원룸[2].title }} 원룸</h4>
+    <p>{{원룸[2].price}}원</p>
+  </div>
+  <div>
+    <img :src="원룸[3].image" class="room-img">
+    <h4>{{ 원룸[3].title }} 원룸</h4>
+    <p>{{원룸[3].price}}원</p>
+  </div>
+  <div>
+    <img :src="원룸[4].image" class="room-img">
+    <h4>{{ 원룸[4].title }} 원룸</h4>
+    <p>{{원룸[4].price}}원</p>
+  </div>
+  <div>
+    <img :src="원룸[5].image" class="room-img">
+    <h4>{{ 원룸[5].title }} 원룸</h4>
+    <p>{{원룸[5].price}}원</p>
   </div>
 </template>
 
 <script>
+import data from './assets/post.js';
 
 export default {
   name: 'App',
   data(){
     return{
+      원룸 : data,
       모달오픈 : false,
       price : ['50', '60', '55'],
       green : 'color : green',
@@ -103,7 +114,7 @@ div {
 
 .menu a {
   color: white;
-  padding: 10px;
+  padding:20px;
 }
 .room-img {
   width: 70%;
